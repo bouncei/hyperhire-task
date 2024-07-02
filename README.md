@@ -1,78 +1,107 @@
-<p align="center">
-  <a href="https://www.chromatic.com/">
-    <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
-  </a>
-</p>
+# Soo and Carrots - React Native Application
 
-<h1 align="center">
-  Chromatic's Intro to Storybook React Native template
-</h1>
+This project is a React Native application for the Soo and Carrots competition registration process. It is developed as an assessment to demonstrate the implementation of a multi-step signup process with error handling, competition selection, and completion confirmation.
 
-This template ships with the main React Native and Storybook configuration files you'll need to get up and running fast.
+## Features
 
-## 🚅 Quick start
+- **Splash Screen:** Initial screen displayed to the user.
+- **Signup Process:** 
+  - User can create an account.
+  - Error handling for invalid inputs.
+- **Competition Selection:** 
+  - Users can choose from a list of available competitions.
+- **Signup Completion:** 
+  - Confirmation screen displayed upon successful signup.
 
-1.  **Create the application.**
+## Technologies Used
 
-    Use [degit](https://github.com/Rich-Harris/degit) to get this template.
+- React Native
+- Storybook for component development and testing
 
-    ```shell
-    # Clone the template
-    npx degit chromaui/intro-storybook-react-native-template#main taskbox
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- Expo
+- yarn or npm
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-repo/hyperhire-task.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd hyperhire-task
+    ```
+3. Install dependencies:
+    ```bash
+    yarn install
+    ```
+    or
+    ```bash
+    npm install
     ```
 
-1.  **Install the dependencies.**
+### Running the Application
 
-    Navigate into your new site’s directory and install the necessary dependencies.
+1. Start the development server:
+    ```bash
+    yarn start
+    ```
+    or
+    ```bash
+    npm start
+    ```
+2. Run the application on an emulator or a physical device:
+    ```bash
+    yarn android
+    ```
+    or
+    ```bash
+    npm run android
+    ```
+    for Android, and
+    ```bash
+    yarn ios
+    ```
+    or
+    ```bash
+    npm run ios
+    ```
+    for iOS.
 
-    ```shell
-    # Navigate to the directory
-    cd taskbox/
+### Storybook
 
-    # Install the dependencies
-    yarn
+Storybook is used for developing and testing UI components in isolation
+
+
+1. Start Storybook:
+    ```bash
+    yarn storybook
+    ```
+    or
+    ```bash
+    npm run storybook
     ```
 
-1.  **Open the source code and start editing!**
+### Dummy Data and Props
 
-    Open the `taskbox` directory in your code editor of choice and building your first component!
+- Implement the application with dummy data.
+- Use props to pass data from the server to components.
 
-1.  **Browse your stories!**
+## Useful Links
 
-    Run `yarn storybook:ios` for ios or `yarn storybook:android` for android to see your component's stories on your emulator or device.
+- [Storybook - Intro to Storybook (React Native)](https://storybook.js.org/tutorials/intro-to-storybook/react-native/en/get-started/)
 
-## 🔎 What's inside?
+## Notes
 
-A quick look at the top-level files and directories included with this template.
+- The React link provides a more detailed description. Most of them can be used together, so take note.
+- **Storybook implementation is mandatory.**
 
-    .
-    ├── .gitignore
-    ├── LICENSE
-    ├── README.md
-    ├── App.jsx
-    ├── app.config.js
-    ├── yarn.lock
-    ├── package.json
-    ├── babel.config.js
 
-1.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+## License
 
-2.  **`LICENSE`**: The template is licensed under the MIT licence.
-
-3.  **`README.md`**: A text file containing useful reference information about the project.
-
-4. **`App.jsx`**: This is the entry point of your app.  
-
-5. **`app.config.js`**: This is the configuration file for Expo that allows you to customize your app.
-
-6. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed.
-
-## Contribute
-
-If you encounter an issue with the template, we encourage you to open an issue in this template's repository.
-
-## Learning Storybook
-
-1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react-native/en/get-started/).
-2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
-3. See our official documentation at [Storybook](https://storybook.js.org/).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
